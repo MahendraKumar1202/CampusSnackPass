@@ -13,13 +13,16 @@
         </header>
         <section class="categories">
             <input type="text" class="search" value="" placeholder="Hungry?">
+            <button id="darkmode">🌙 Dark Mode</button>
             <button class="Sort">Sort</button>
             <button class="categories-btn">All</button>
             <button class="categories-btn">Pizza</button>
             <button class="categories-btn">Burger</button>
             <button class="categories-btn">Drinks</button>
             <button class="categories-btn">Desserts</button>
-        </section>
+            <button class="categories-btn">Popular</button>
+            
+            </section>
         <section class="menu" id="menu">
 
         </section>
@@ -28,10 +31,36 @@
             <h2> 🛒YOUR CART</h2>
             <p id="cart-items">No Items Selected</p>
             <h3>ORDER SUMMARY</h3>
+            <div id="rating-section">
+    <h3>⭐ Rate Your Order</h3>
+
+    <div id="stars">
+        <button class="star" value="1">☆</button>
+        <button class="star" value="2">☆</button>
+        <button class="star" value="3">☆</button>
+        <button class="star" value="4">☆</button>
+        <button class="star" value="5">☆</button>
+    </div>
+
+    <button id="reviewbtn">Submit Review</button>
+
+    <p id="reviewmessage"></p>
+</div>
             <p id="prices">TOTAL: Rs.0</p>
             <button id="clear">CLEAR CART</button>
             <button class="cnfrm-btn">Confirm Order</button>
+            <div class="coupon">
+    <input type="text" id="coupon" placeholder="Enter coupon code">
+    <button id="apply">Apply Coupon</button>
+    <p id="discount"></p>
+            </div>
         </section>
+        <div id="order-status"></div>
+<div id="order-summary"></div>
+<div id="order-history">
+    <h2>🧾 Order History</h2>
+    <div id="history-list">No previous orders</div>
+</div>
         <p id="message"></p>
 <script src="script.js"></script>
 </body>
